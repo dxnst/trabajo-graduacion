@@ -8,6 +8,17 @@
 \usepackage{titlesec}
 \usepackage[hidelinks]{hyperref}
 
+\usepackage{tocloft}
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}} % Adds dots to chapters
+\renewcommand{\cftchappagefont}{\normalfont} % Normal font for page numbers
+\setlength{\cftchapnumwidth}{2.5em} % Increase space for chapter numbers
+\setlength{\cftbeforechapskip}{6pt} % Space before chapter entries
+\renewcommand{\cftchapaftersnum}{\hspace{0.5em}} % Space after chapter number
+
+% Center the TOC title
+\renewcommand{\cfttoctitlefont}{\hfill\Large\bfseries}
+\renewcommand{\cftaftertoctitle}{\hfill}
+
 % Formatos de títulos
 \titleformat{\chapter}[block]{\normalfont\fontsize{12pt}{12pt}\bfseries}{CAPÍTULO \ \thechapter.}{0.6em}{\centering\MakeUppercase}
 \titlespacing*{\chapter}{0em}{0cm}{1.5pt}
@@ -127,10 +138,10 @@ Ixquiac Vásquez, Etelvina Del Rosario \and Guzmán Pérez, Mariana Del Rosario
 \includepdf[scale=0.90,pages=-]{varios/dictamen-interno.pdf}
 
 % Incluir dedicatorias
-\input{prefacio/dedicatorias/josue}
 \input{prefacio/dedicatorias/etelvina}
 \input{prefacio/dedicatorias/mariana}
 \input{prefacio/dedicatorias/sonia}
+\input{prefacio/dedicatorias/josue}
 \input{prefacio/dedicatorias/sarah}
 
 % Incluir abstract
@@ -150,6 +161,8 @@ Ixquiac Vásquez, Etelvina Del Rosario \and Guzmán Pérez, Mariana Del Rosario
 \input{contenido/06-discusion}
 \input{contenido/07-conclusiones}
 \input{contenido/08-recomendaciones}
+
+\renewcommand{\bibname}{Referencias bibliográficas}
 
 \printbibliography[heading=bibintoc]
 
