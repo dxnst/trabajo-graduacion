@@ -11,9 +11,10 @@
 \usepackage{tocloft}
 \renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}} % Adds dots to chapters
 \renewcommand{\cftchappagefont}{\normalfont} % Normal font for page numbers
-\setlength{\cftchapnumwidth}{2.5em} % Increase space for chapter numbers
+\setlength{\cftchapnumwidth}{5.9em} % Increase space for "Capítulo" + chapter numbers
 \setlength{\cftbeforechapskip}{6pt} % Space before chapter entries
 \renewcommand{\cftchapaftersnum}{\hspace{0.5em}} % Space after chapter number
+\renewcommand{\cftchappresnum}{Capítulo } % Add "Capítulo" before chapter number
 
 % Center the TOC title
 \renewcommand{\cfttoctitlefont}{\hfill\Large\bfseries}
@@ -136,6 +137,7 @@ Ixquiac Vásquez, Etelvina Del Rosario \and Guzmán Pérez, Mariana Del Rosario
 \includepdf[scale=0.90,pages=-]{varios/dictamen-asesor.pdf}
 \includepdf[scale=0.95,pages=-]{varios/dictamen-externo.pdf}
 \includepdf[scale=0.90,pages=-]{varios/dictamen-interno.pdf}
+\includepdf[scale=1,pages=-]{varios/orden-impresion.pdf}
 
 % Incluir dedicatorias
 \input{prefacio/dedicatorias/etelvina}
